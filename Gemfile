@@ -44,3 +44,4 @@ group :development, :test do
   gem 'rails-controller-testing'
 end
 
+gem 'bootstrap-sass'
