@@ -25,6 +25,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
   gem 'rails-controller-testing'
   gem 'pry-rails'
 end
