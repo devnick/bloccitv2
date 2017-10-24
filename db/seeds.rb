@@ -26,6 +26,16 @@ end
 
 advertisements = Advertisement.all
 
+5.times do
+  Question.create!(
+    title: RandomData.random_sentence,
+    body: RandomData.random_paragraph,
+    resolved: false
+  )
+end
+
+questions = Question.all
+
 Post.find_or_create_by(title:"test title", body:"test body")
 Comment.find_or_create_by(body:"test comment body")
 
@@ -33,3 +43,4 @@ puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
 puts "#{Advertisement.count} Advertisements created"
+puts "#{Question.count} Questions created"
