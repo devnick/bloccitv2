@@ -20,10 +20,8 @@ end
 
 10.times do
   Advertisement.create!(
-    title:  RandomData.random_sentence,
-    copy:   "THIS IS THE COPY"
-    price:
-
+    title:  RandomData.random_sentence
+  )
 end
 
 advertisements = Advertisement.all
