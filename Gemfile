@@ -27,6 +27,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'rails-controller-testing'
+  gem 'shoulda'
   gem 'pry-rails'
 end
 
