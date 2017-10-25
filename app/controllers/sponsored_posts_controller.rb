@@ -11,4 +11,9 @@ class SponsoredPostsController < ApplicationController
   def edit
       @sponsored_post = SponsoredPost.find(params[:id])
   end
+
+  def create
+
+  end
+
 end
