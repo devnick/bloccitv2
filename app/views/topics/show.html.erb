@@ -1,5 +1,5 @@
 <h1><%= @topic.name %></h1>
-
+<p style="color:red">New sponsered post button gos to new topic</p>
 <%= link_to "Edit Topic", edit_topic_path, class: 'btn btn-success' %>
 <%= link_to "Delete Topic", @topic, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you w   ant to delete this topic?' } %>
 <%= link_to "New Sponsered Post", new_topic_path([@sponsered_post]), class: 'btn btn-success' %>
@@ -21,4 +21,6 @@
         </div>
       </div>
     <% end %>
+    <p style="color:red">not sure how to make sponsered posts show up or how they should show up</p>
   </div>
+
