@@ -1,5 +1,4 @@
 <h1><%= @topic.name %></h1>
-<p style="color:red">New sponsered post button gos to new topic</p>
 <%= link_to "Edit Topic", edit_topic_path, class: 'btn btn-success' %>
 <%= link_to "Delete Topic", @topic, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you w   ant to delete this topic?' } %>
 <%= link_to "New Post", new_topic_post_path([@topic, @posts]), class: 'btn btn-success' %>
