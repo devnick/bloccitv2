@@ -10,7 +10,9 @@ class User < ApplicationRecord
             presence: true,
             uniqueness: { case_sensitive: false },
             length: { minimum: 3, maximum: 254 }
-      has_secure_password
+
+  has_secure_password
+
   def format_name
     if name
       name_array = []
