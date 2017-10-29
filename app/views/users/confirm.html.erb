@@ -10,11 +10,16 @@
 
 <div class="row">
     <div class="col-md-4", style="width: auto;">
-        <%= button_to "Yes", {controller: "users", action: "create", params: params.permit!}, class: 'btn btn-success' %>
+        <%= form_for @user do |f| %>
+            <%= f.hidden_field :name %>
+            <%= f.hidden_field :email %>
+            <%= f.hidden_field :password %>
+            <%= f.hidden_field :password_confirmation %>
+            <%= f.submit "Yes", class: 'btn btn-success'%>
+        <% end %>
     </div>
     <div class="col-md-4", style="width: auto;">
         <%= button_to "No", {:controller => "users", :action => "new"}, class: 'btn btn-failure', :method => :get %>
     </div>
 </div>
-
 
